@@ -1,0 +1,34 @@
+html, body{
+	margin: 0 auto;
+	height: auto !important;
+}
+*{
+    font-family:Tahoma, Arial, Microsoft yahei, sans-serif !important;
+    /*font-size: 16px;*/
+}
+img{
+	border:0;
+	max-width: 100%;
+}
+.displaynone{
+	display:none;
+}
+.displayblock{
+	display:block;
+}
+
+.navbar {
+    min-height: 58px;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.BoxYS{
+	width: 100%;
+	min-height: 1px; 
+	overflow: hidden;
+}
+

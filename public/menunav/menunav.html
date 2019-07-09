@@ -1,0 +1,235 @@
+<!-- 搜索页面 -->
+<div class="searchpage">
+    <div class="container">
+        <div class="searchpage_close">
+            <a href="javascript:void(0);">Close</a>
+        </div>
+        <div>
+            <div class="">
+                <input type="text" name="fname" />
+            </div>
+            <div class="">
+                发现724种词条
+            </div>
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</div>
+
+<nav class="navbar navbar-default navbar-static-top" style="border-bottom: none !important; background-color: #ffffff;">
+    <div class="container" style="position: relative;">
+        <!-- nav btn -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed"
+                data-toggle="collapse" data-target="#navbarmore1" aria-expanded="false"
+                aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/" style="z-index: 9999;">
+                <img src="/images/logo.png">
+            </a>
+        </div>
+        <div class="navbarinfo">
+            <div class="navbar_search">
+                <a href="javascript:void(0);">
+                    <img src="/images/icon_search.png">
+                </a>
+            </div>
+            <div class="navbar_Signin">
+                <a href="#">
+                    登录
+                </a>
+            </div>
+            <div class="navbar_register">
+                <a href="#">
+                    注册
+                </a>
+            </div>
+        </div>
+        <div id="navbarmore1" class="navbar-collapse collapse">
+            <div class="menu-container">
+                <div class="menu">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="javaScript:void(0);" _link="/">
+                                发现
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javaScript:void(0);" _link="/designer/">
+                                造梦师
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javaScript:void(0);" _link="/material/">
+                                素材
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javaScript:void(0);" _link="/sites/">
+                                网站主题
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javaScript:void(0);" _link="/Help/">
+                                帮帮忙
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javaScript:void(0);">
+                                ...
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div><!--/.nav-collapse -->
+    </div>
+</nav>
+<!--=== 网站二级导航  menu END===-->
+
+<nav id="navbar" class="navbar navbar-default navbar-fixed-top fadeInDown animated" style="display: none; background-color: #000000;">
+    <div class="container" style="position: relative;">
+        <!-- nav btn -->
+        <div class="navbar-header">
+            <button id="button" type="button" class="navbar-toggle collapsed"
+                data-toggle="collapse" data-target="#navbarmore2" aria-expanded="false"
+                aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/" style="z-index: 9999;">
+                <img src="/images/logo2.png">
+            </a>
+        </div>
+        <div class="Mnavbarinfo">
+            <div class="navbar_search">
+                <a href="javascript:void(0);">
+                    <img src="/images/icon_search2.png">
+                </a>
+            </div>
+            <div class="navbar_Signin2">
+                <a href="#">
+                    登录
+                </a>
+            </div>
+            <div class="navbar_register">
+                <a href="#">
+                    注册
+                </a>
+            </div>
+        </div>
+        <div id="navbarmore2" class="navbar-collapse collapse">
+            <div class="menu-container">
+                <div id="menu" class="menu">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="javaScript:void(0);" _link="/">
+                                发现
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javaScript:void(0);" _link="/designer/">
+                                造梦师
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javaScript:void(0);" _link="/material/">
+                                素材
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javaScript:void(0);" _link="/sites/">
+                                网站主题
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javaScript:void(0);" _link="/Help/">
+                                帮帮忙
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javaScript:void(0);">
+                                ...
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div><!--/.nav-collapse -->
+    </div>
+</nav>
+<!--=== 网站二级导航  menu END===-->
+
+
+
+<script type="text/javascript">
+
+    $(document).ready(function(){
+        var _href = window.location.href;
+        $(".nav>li>a").each(function(){
+           var _link = $(this).attr("_link");
+           if(_href.indexOf(_link)>-1){
+                 $(this).addClass("active");
+                 return false;
+           }
+        });
+
+       $(".nav>li>a").click(function(){
+            var _link = $(this).attr("_link");
+            window.location = _link;
+       });  
+    })
+
+    // 设置选中状态
+    // $('#navbar li a:eq(' + (function(){
+    //     var i = 0;
+    //     $('#navbarmore1 li a').each(function(index, element){
+    //         if($(this).attr('class') == 'active') {
+    //             i = index
+    //         }
+    //     })
+    //     return i
+    // })() + ')').addClass('active')
+
+    // 点击显示效果
+     $(document).ready(function() {
+        $(".navbar_search a").click(function(){
+            $(".searchpage").show();
+        });
+        $(".searchpage_close a").click(function(){
+            $(".searchpage").hide();
+        });
+    });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
