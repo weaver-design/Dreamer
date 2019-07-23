@@ -1,6 +1,25 @@
 [
   {
-    "name": "陈敬照",
+    "id":"20190723105820",
+    "Username":"jack-g-chen",
+    "Password":"1",
+    "Nickname": "陈敬照",
+
+    "browse": "1000",
+    "follow": "50",
+    "likeme": "60",
+
+    "professionaltitle": [
+      "ui",
+      "gui",
+      "plane",
+      "video",
+      "website",
+      "Frontend",
+    ]
+
+
+
     "portrait": "/images/img_Head.jpg",
     "Occupation": "平面设计师",
 
@@ -9,7 +28,12 @@
     "like": "20000",
     "works": "/images/img_list2.jpg",
     "worksname": "Mocha Mobile UI Kit",
-    "weblinks": "https://www.baidu.com/"
+    "weblinks": "https://www.baidu.com/",
+    "categery": [
+      "recommend",
+      "new",
+      "hot",
+    ]
   },
   {
     "name": "杨柳",
