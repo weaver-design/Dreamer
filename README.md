@@ -35,3 +35,11 @@ server {
   }
 }
 ```
+
+## Ajax
+
+```html
+$.get('/teams', function(res) {
+    console.log(res)
+})
+```
