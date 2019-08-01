@@ -14,10 +14,18 @@ server {
     set $my_server http://127.0.0.0:1337; 
 
     location / {
-        proxy_pass $my_server;
+        proxy_pass /home/ubuntu/Dreamer;
     }
 
     location /api/ {
+        proxy_pass $my_server;
+    }
+    
+    location /teams/ {
+        proxy_pass $my_server;
+    }
+    
+    location /admin/ {
         proxy_pass $my_server;
     }
 }
