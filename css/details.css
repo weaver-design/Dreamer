@@ -788,9 +788,7 @@
 	float: left;
 	display:block;
 	color:#666666;
-}
-.details_about_data a:hover{
-	color:#000000;
+	pointer-events:none;
 }
 .details_about_data a img{
 	width:24px;

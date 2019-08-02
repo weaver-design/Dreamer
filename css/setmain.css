@@ -1,0 +1,190 @@
+/*---------------------
+
+  修改用户信息页面
+
+---------------------*/
+
+.content-modify-userinfor{
+    padding: 40px 0px;
+}
+.content-modify-userinfor-box{
+	width:100%;
+	min-height: 1px;
+	overflow: hidden;
+	background-color: #ffffff;
+}
+.content-modify-userinfor-title{
+	width:100%;
+	min-height: 1px;
+	overflow: hidden;
+	background-color: #ffffff;
+	padding-top: 30px;
+	padding-bottom: 15px;
+}
+.content-modify-userinfor-title span{
+	display: block;
+	width:auto;
+	min-height: 1px;
+	line-height: 20px;
+	font-size: 12px;
+	color:#666666;
+	padding-left: 26px;
+	border-left: 4px solid #1962aa;
+}
+.content-modify-userinfor-main{
+	width:100%;
+	min-height: 1px;
+	overflow: hidden;
+	background-color: #ffffff;
+}
+.content-modify-userinfor-main-tab{
+	width:100%;
+	min-height: 1px;
+	overflow: hidden;
+	background-color: #ebebeb;
+}
+.content-modify-userinfor-main-tab ul{
+	padding:0px;
+}
+.content-modify-userinfor-main-tab ul li{
+	list-style: none;
+}
+.content-modify-userinfor-main-tab ul li a{
+	width:auto;
+	min-height: 1px;
+	display: block;
+	float: left;
+	padding:0px 30px;
+	color:#000000;
+	font-size: 18px;
+	line-height: 60px;
+}
+.content-modify-userinfor-main-tab ul li a:hover{
+	background-color: #f8f8f8;
+	color:#000000;
+}
+.content-modify-userinfor-main-tab ul li a.active{
+	background-color: #ffffff;
+	color:#000000;
+}
+
+.content-modify-userinfor-main-content table{
+    min-height: 480px;
+}
+.content-modify-userinfor-main-content table tr{
+	vertical-align:top
+}
+.content-modify-userinfor-main-content table tr td{
+	height :42px;
+    padding-bottom: 15px;
+}
+.content-modify-userinfor-main-content table tr td span{
+    font-size: 14px;
+    color: #757575;
+    line-height: 42px;
+}
+.content-modify-userinfor-main-content table tr td input{
+    width: 68%;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #dbe2e6;
+    padding-left: 15px;
+}
+.content-modify-userinfor-main-content table tr td textarea{
+    width: 100%;
+    height: 200px;
+    line-height: 24px;
+    border: 1px solid #dbe2e6;
+    padding:15px;
+}
+.content-modify-userinfor-main-content table tr td select{
+    width: 120px;
+    height: 40px;
+    border: 1px solid #dbe2e5;
+    background: none;
+    font-size: 14px;
+    margin-right: 15px;
+}
+
+.content-modify-userinfor-main-content{
+	padding:30px;
+}
+.content-modify-userinfor-btn{
+	width:100%;
+	margin-top: 25px;
+}
+.content-modify-userinfor-btn input{
+	width:48% !important;
+	min-height: 1px;
+	overflow: hidden;
+	line-height: 48px;
+	text-align: center;
+	font-size: 12px;
+	color:#ffffff;
+	background-color: #4aae1d;
+	border: none !important;
+}
+.content-modify-userinfor-btn input:hover{
+	background-color: #4395e2;
+}
+
+.addheadimg_text{
+
+}
+.addheadimg_text a{
+    width: 120px;
+    height: 40px;
+    display: block;
+    line-height: 40px;
+    text-align: center;
+    font-size: 12px;
+    color: #ffffff;
+    background-color: #9f9f9f;
+}
+.addheadimg_text a:hover{
+	background-color: #4395e2;
+}
+.addheadimg_text span{
+	
+}
+
+.content-modify-userinfor-domain{
+
+}
+.content-modify-userinfor-domain span{
+
+}
+.content-modify-userinfor-domain input{
+    width: 200px !important;
+    margin: 0px 10px;
+}
+
+.ico-tagmust{
+    width: 100%;
+    margin-top: 8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
