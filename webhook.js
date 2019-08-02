@@ -2,7 +2,7 @@ const http = require('http');
 const crypto = require('crypto');
 const exec = require('child_process').exec;
 
-const secret = "wued2019";
+const secret = "wued@2019";
 //const repo = "C://github/wued-dreamer";
 
 //打开 8081 端口监听来自 Github 的 Push 推送
