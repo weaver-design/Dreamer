@@ -242,6 +242,9 @@
     border-radius:4px;
     
 }
+.content_table_left_user {
+    display: none;
+}
 
     /*---------------------
     详情部分

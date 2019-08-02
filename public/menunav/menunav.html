@@ -18,6 +18,9 @@
     </div>
 </div>
 
+<!-- 登录页面 -->
+<div id="Signin" class="Signinbox"></div>
+
 <nav class="navbar navbar-default navbar-static-top" style="border-bottom: none !important; background-color: #ffffff;">
     <div class="container" style="position: relative;">
         <!-- nav btn -->
@@ -40,13 +43,13 @@
                     <img src="/images/icon_search.png">
                 </a>
             </div>
-            <div class="navbar_Signin">
-                <a href="#">
+            <div class="navbarSignin navbar-Signin-btn1">
+                <a href="javascript:void(0);">
                     登录
                 </a>
             </div>
             <div class="navbar_register">
-                <a href="#">
+                <a href="/function/register.html">
                     注册
                 </a>
             </div>
@@ -61,7 +64,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="javaScript:void(0);" _link="/designer/">
+                            <a href="javaScript:void(0);" _link="/user/userlist.html">
                                 造梦师
                             </a>
                         </li>
@@ -115,8 +118,8 @@
                     <img src="/images/icon_search2.png">
                 </a>
             </div>
-            <div class="navbar_Signin2">
-                <a href="#">
+            <div class="navbarSignin navbar-Signin-btn2">
+                <a href="javascript:void(0);">
                     登录
                 </a>
             </div>
@@ -171,6 +174,19 @@
 
 
 <script type="text/javascript">
+    // 点击显示效果
+    $(document).ready(function() {
+        $(".navbarSignin a").click(function(){
+            $(".Signinbox").show();
+        });
+
+    });
+    // 引入登录页面
+    $(function(){
+        var url = window.location.href;
+        $("#Signin").load("/function/Signin.html",function(){
+        });
+    });
 
     $(document).ready(function(){
         var _href = window.location.href;
@@ -200,7 +216,7 @@
     // })() + ')').addClass('active')
 
     // 点击显示效果
-     $(document).ready(function() {
+    $(document).ready(function() {
         $(".navbar_search a").click(function(){
             $(".searchpage").show();
         });

@@ -1,0 +1,104 @@
+<div class="Signin-formbox">
+    <!-- 关闭按钮 -->
+    <div class="Signin-close">
+        <a href="javascript:void(0);">关闭</a>
+    </div>
+    <!-- 表单 -->
+    <div class="Signin-form">
+        <div class="Signin-form-title">
+            <div class="Signin-form-title-t1">
+                会员登录
+            </div>
+            <div class="Signin-form-title-t2">
+                <span>还没有账号</span>
+                <a href="/function/register.html">立即注册</a>
+            </div>
+        </div>
+        <div class="Signin-form-inputinfo">
+            
+        </div>
+        <!-- 直接登录 -->
+        <div class="Signin-inputbox">
+            <form action="">
+            <div class="Signin-inputbox-title">
+                手机 or 邮箱登录
+            </div>
+            <div class="Signin-inputbox-input">
+                <form action="">
+                <div class="Signin-input-box">
+                    <input type="text" name="fname" value="请输入账号" />
+                </div>
+                <div class="Signin-input-box">
+                    <input type="text" name="fname" value="请输入密码" />
+                </div>
+            </div>
+            <!--  -->
+            <div class="boxmain">
+                <div class="Signin-inputbox-btn">
+                    <input type="submit" value="提交" />
+                </div>
+                <div class="Signin-inputbox-forgotten">
+                    <a href="">
+                        忘记密码？
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 第三方注册 -->
+        <div class="Signin-Thirdparty">
+            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tbody>
+                    <tr>
+                        <td colspan="5">
+                            <div class="Signin-Thirdparty-Notes">
+                                您可以选择一下第三方账号直接登录，一分钟完成注册
+                            </div>
+                        </td
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="Signin-Thirdparty-btn">
+                                <a href="">
+                                    <img src="/images/icon_weixin.png">
+                                    <span>微信</span>
+                                </a>
+                            </div>
+                        </td>
+                        <td width="20"></td>
+                        <td>
+                            <div class="Signin-Thirdparty-btn">
+                                <a href="">
+                                    <img src="/images/icon_weibo.png">
+                                    <span>微博</span>
+                                </a>
+                            </div>
+                        </td>
+                        <td width="20"></td>
+                        <td>
+                            <div class="Signin-Thirdparty-btn">
+                                <a href="">
+                                    <img src="/images/icon_qq.png">
+                                    <span>QQ</span>
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+</div>
+
+
+
+<script type="text/javascript">
+    // 点击显示效果
+    $(document).ready(function() {
+        $(".Signin-close").click(function(){
+            $(".Signinbox").hide();
+        });
+    });
+
+</script>
