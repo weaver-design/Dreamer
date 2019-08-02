@@ -53,3 +53,5 @@ $.get('/teams', function(res) {
 ```
 
 // test hook
+
+// auto hook
