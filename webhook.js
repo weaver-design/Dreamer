@@ -11,12 +11,13 @@ http.createServer(function (req, res) {
   let state = 'Loading';
   req.on('data', function(chunk) {
 	  chunks += chunk.toString();
-      const sig = "sha1=" + crypto.createHmac('sha1', secret).update(chunks).digest('hex');
-      if (req.headers['x-hub-signature'] == sig) {
-        state = 'Finished';
-        exec('sudo git pull');
-        //exec('cd ' + repo + ' && git pull');
-      }
+    const sig = "sha1=" + crypto.createHmac('sha1', secret).update(chunks).digest('hex');
+    state = sig;
+    if (req.headers['x-hub-signature'] == sig) {
+      state = 'Finished';
+      exec('sudo git pull');
+      //exec('cd ' + repo + ' && git pull');
+    }
   });
 
   res.end('Hello World Form DreamerHook State: ' + state);
