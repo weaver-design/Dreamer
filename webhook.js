@@ -9,7 +9,8 @@ const secret = "wued@2019";
 http.createServer(function (req, res) {
   let chunks = '';
   req.on('data', function(chunk) {
-	  chunks += chunk.toString();
+    chunks += chunk.toString();
+    console.log(chunks);
     const sig = "sha1=" + crypto.createHmac('sha1', secret).update(chunks).digest('hex');
     if (req.headers['x-hub-signature'] == sig) {
       exec('git pull');
