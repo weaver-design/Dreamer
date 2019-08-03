@@ -51,7 +51,3 @@ $.get('/teams', function(res) {
     console.log(res)
 })
 ```
-
-// Fixed the webhook
-
-// tegsg tst
