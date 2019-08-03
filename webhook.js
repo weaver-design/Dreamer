@@ -7,17 +7,19 @@ const secret = "wued@2019";
 
 //打开 8081 端口监听来自 Github 的 Push 推送
 http.createServer(function (req, res) {
-  let chunks = ''
+  let chunks = '';
+  let state = 'Loading';
   req.on('data', function(chunk) {
 	  chunks += chunk.toString();
       const sig = "sha1=" + crypto.createHmac('sha1', secret).update(chunks).digest('hex');
       if (req.headers['x-hub-signature'] == sig) {
+        state = 'Finished';
         exec('sudo git pull');
         //exec('cd ' + repo + ' && git pull');
       }
   });
 
-  res.end('Hello World Form DreamerHook\n');
+  res.end('Hello World Form DreamerHook State: ' + state);
 }).listen(8081);
 
 // const http = require('http');
