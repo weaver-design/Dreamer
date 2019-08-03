@@ -26,16 +26,16 @@
             <div class="Signin-inputbox-input">
                 <form action="">
                 <div class="Signin-input-box">
-                    <input type="text" name="fname" value="请输入账号" />
+                    <input type="text" name="fname" id="identifier" placeholder="请输入账号" />
                 </div>
                 <div class="Signin-input-box">
-                    <input type="password" name="fname" value="请输入密码" />
+                    <input type="password" name="fpassword" id="password" placeholder="请输入密码" />
                 </div>
             </div>
             <!--  -->
             <div class="boxmain">
                 <div class="Signin-inputbox-btn">
-                    <input type="submit" value="提交" />
+                    <div id="loginBtn">提交</div>
                 </div>
                 <div class="Signin-inputbox-forgotten">
                     <a href="">
@@ -92,13 +92,33 @@
 </div>
 
 
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
 <script type="text/javascript">
     // 点击显示效果
     $(document).ready(function() {
         $(".Signin-close").click(function(){
             $(".Signinbox").hide();
         });
+        document.querySelector('#loginBtn').onclick = function(e) {
+            axios
+            .post('/auth/local', {
+                identifier: document.querySelector('#identifier').value,
+                password: document.querySelector('#password').value
+            })
+            .then(response => {
+                // Handle success.
+                console.log('Well done!');
+                console.log('User profile', response.data.user);
+                console.log('User token', response.data.jwt);
+                window.alert('注册成功 :-)');
+                document.querySelector('#Signin').style.display = 'none';
+            })
+            .catch(error => {
+                // Handle error.
+                console.log('An error occurred:', error);
+                window.alert('注册失败 :-)' + error);
+            });
+        }
     });
 
 </script>

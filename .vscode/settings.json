@@ -1,8 +1,8 @@
 {
-  "liveServer.settings.port": 5500,
+  "liveServer.settings.port": 5502,
   "liveServer.settings.proxy": {
     "enable": true,
-    "baseUri": "/teams", // 从某路径下开始全量代理
-    "proxyUri": "http://47.99.54.213:1337/teams" // 代理服务地址
+    "baseUri": "/api", // 从某路径下开始全量代理
+    "proxyUri": "http://47.99.54.213:80/api" // 代理服务地址
   }
 }
