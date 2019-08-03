@@ -110,13 +110,13 @@
                 console.log('Well done!');
                 console.log('User profile', response.data.user);
                 console.log('User token', response.data.jwt);
-                window.alert('注册成功 :-)');
+                window.alert('登录成功 :-)');
                 document.querySelector('#Signin').style.display = 'none';
             })
             .catch(error => {
                 // Handle error.
                 console.log('An error occurred:', error);
-                window.alert('注册失败 :-)' + error);
+                window.alert('登录失败 :-)' + error);
             });
         }
     });
