@@ -51,3 +51,10 @@ $.get('/teams', function(res) {
     console.log(res)
 })
 ```
+
+## Nginx
+
+location ~^/api/[^\/]+/[^\/]+ {
+　　rewrite ^(/api)(.*)$ $2 break;
+　　proxy_pass $my_server;
+}

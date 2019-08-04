@@ -101,7 +101,7 @@
         });
         document.querySelector('#loginBtn').onclick = function(e) {
             axios
-            .post('/auth/local', {
+            .post('/api/auth/local', {
                 identifier: document.querySelector('#identifier').value,
                 password: document.querySelector('#password').value
             })
