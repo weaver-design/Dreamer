@@ -25,6 +25,242 @@
 }
 
 /*---------------------
+设计师列表
+---------------------*/
+.userlist{
+
+}
+.userlist-screen-box{
+    background-color: #ffffff;
+}
+.userlist-screen-select{
+	width: auto;
+	min-height: 1px;
+	float: left;
+}
+.userlist-screen-sort{
+	width: auto;
+	min-height: 1px;
+	float: right;
+}
+.userlist-screen-notes{
+	width: auto;
+	min-height: 1px;
+	float: left;
+	font-size: 12px;
+	line-height: 44px;
+	color:#999999;
+	padding-right: 6px;
+}
+.userlist-screen-select{
+	width: auto;
+	min-height: 1px;
+	float: left;
+}
+.userlist-screen-select select{
+    width: auto;
+    height: 44px;
+    display: block;
+    font-size: 12px;
+    line-height: 44px;
+    color: #333333;
+    background: none;
+	border: none;
+	padding-right: 20px;
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	background: url('/images/ico_select.png') no-repeat right center;
+	background-size: 16px 16px;
+}
+.userlist-screen-line{
+	width: 1px;
+	height: 10px;
+	float: left;
+	background-color: #ededed;
+	margin: 17px 10px 0px 10px;
+}
+
+.userlist-main{
+    width: 100%;
+    min-height: 1px;
+    overflow: hidden;
+	background-color: #ffffff;
+	padding-bottom: 48px;
+}
+.userlist-main-box{
+    width: 100%;
+    min-height: 1px;
+}
+.userlist-main-singlebox{
+    width: 40%;
+    min-height: 1px;
+	float: left;
+	margin-bottom: 0px;
+}
+.userlist-main-single{
+    width: 100%;
+    min-height: 1px;
+    overflow: hidden;
+    padding: 30px;
+    border-bottom: 1px solid #eaeaea;
+}
+.userlist-main-single-headimg{
+    width: 80px;
+    height: 80px;
+	float: left;
+}
+.userlist-main-single-headimg img{
+	width: 100%;
+	-moz-border-radius: 100%;
+	-webkit-border-radius: 100%;
+	border-radius:100%;
+}
+.userlist-main-single-userinfo{
+    width: auto;
+    min-height: 1px;
+	padding-left: 20px;
+	float: left;
+}
+.userlist-main-single-userinfo-content{
+    width: auto;
+	min-height: 1px;
+	margin-bottom: 16px;
+}
+.userlist-main-single-userinfo-content span{
+	display: block;
+}
+.userlist-main-single-userinfo-conname{
+    width: auto;
+	min-height: 1px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.userlist-main-single-userinfo-conname img{
+    width: 16px;
+}
+.userlist-main-single-userinfo-conjob{
+    font-size: 12px;
+    color: #bbbbbb;
+    line-height: 18px;
+    padding: 2px 0px 8px 0px;
+}
+.userlist-main-single-userinfo-condata{
+    font-size: 14px;
+    color: #666666;
+    line-height: 24px;
+}
+.userlist-main-single-userinfo-condata d{
+    color: #000000;
+}
+.userlist-main-single-userinfo-conintroduce{
+    font-size: 12px;
+    color: #bbbbbb;
+    line-height: 18px;
+}
+.userlist-main-single-userinfo-btn{
+    width: auto;
+    min-height: 1px;
+}
+.userlist-main-single-userinfo-btnbox{
+	width: 88px;
+    min-height: 1px;
+	float: left;
+	margin-right: 10px;
+}
+.userlist-main-single-userinfo-btnbox a{
+    width: 100%;
+    min-height: 1px;
+    overflow: hidden;
+    display: block;
+    text-align: center;
+    padding: 0px 15px;
+	line-height: 36px;
+	font-size: 12px;
+
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+}
+.userlist-main-single-userinfo-btnbox a:hover{
+	background-color: #4395e2 !important;
+	color: #ffffff !important;
+	border: 1px solid #4395e2 !important;
+}
+
+#userlist_follow a{
+    color: #ffffff;
+	background-color: #4aae1d;
+	border: 1px solid #4aae1d;
+}
+#userlist_follow a:hover{
+
+}
+#userlist_userhome a{
+    color: #4aae1d;
+	background-color: #ffffff;
+	border: 1px solid #4aae1d;
+}
+#userlist_userhome a:hover{
+
+}
+#userlist_usersite a{
+    color: #4aae1d;
+	background-color: #ffffff;
+	border: 1px solid #4aae1d;
+}
+#userlist_usersite a:hover{
+
+}
+
+.userlist-main-single-works{
+    width: 60%;
+    min-height: 1px;
+    float: right;
+}
+.userlist-main-single-worksimg{
+    width: 200px;
+	min-height: 1px;
+	float: right;
+	margin-right: 10px;
+}
+.userlist-main-single-worksimg a{
+    width: 100%;
+	min-height: 1px;
+	display: block;
+}
+.userlist-main-single-worksimg a:hover{
+	
+}
+.userlist-main-single-worksimg img{
+    width: 100%;
+}
+.userlist-main-single-worksmore{
+	width: 44px;
+	min-height: 1px;
+	float: right;
+}
+.userlist-main-single-worksmore a{
+	width: 44px;
+    min-height: 1px;
+    display: block;
+    padding: 50px 0px;
+}
+.userlist-main-single-worksmore a span{
+    display: block;
+    width: 6px;
+    height: 6px;
+    background-color: #4aae1d;
+    -moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
+    border-radius: 100%;
+    margin: 0 auto 5px auto;
+}
+.userlist-main-single-worksmore a:hover{
+	background-color: #f2f2f2;
+}
+
+/*---------------------
 详情主体内容部分
 ---------------------*/
 .content_details{
@@ -1024,7 +1260,79 @@
 
 /*-------  详情个人信息  end-------*/
 
+/*-------  列表分页  -------*/
 
+.listpaging-box{
+    width: 100%;
+    min-height: 1px;
+}
+.listpaging-btnpc{
+	display: block;
+}
+.listpaging-btnmobile{
+	display: none;
+}
+.listpaging-btnmobile a{
+    width: 64%;
+    line-height: 1px;
+    line-height: 44px;
+    display: block;
+    font-size: 12px;
+    text-align: center;
+    color: #df7728;
+    background-color: #ffffff;
+    margin: 30px auto 15px auto;
+}
+.listpaging-btnmobile a.active{
+	background-color: #df7728;
+}
+
+.listpaging-btn{
+    width: 100%;
+	min-height: 1px;
+	overflow: hidden;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+.listpaging-btn ul{
+	padding: 0;
+}
+.listpaging-btn ul li{
+    list-style: none;
+    overflow: hidden;
+    float: left;
+    margin-right: 10px;
+}
+.listpaging-btn ul li span{
+    font-size: 12px;
+    line-height: 32px;
+    padding: 0px 10px;
+}
+.listpaging-btn ul li a{
+	width: auto;
+	line-height: 1px;
+	line-height: 32px;
+	display: block;
+	padding: 0px 15px;
+	font-size: 12px;
+	color: #666666;
+	background-color: #ffffff;
+}
+.listpaging-btn ul li a:hover{
+	color: #ffffff;
+	background-color: #df7728;
+}
+.listpaging-btn ul li a.active{
+	color: #ffffff;
+	background-color: #df7728;
+}
+
+.listpaging-notoptional{
+	background-color: #d8d8d8 !important;
+	pointer-events: none;
+}
+
+/*-------  列表分页  end-------*/
 
 
 

@@ -5,6 +5,11 @@
 
 @media (min-width: 320px) and (max-width:767px) {
 
+    .Mcontainer{
+        padding-right: 0px !important;
+        padding-left: 0px !important;
+    }
+
     .paddingSpace{
         padding: 0px 15px;
     }
@@ -245,11 +250,81 @@
 .content_table_left_user {
     display: none;
 }
+.userlist-main-single-headimg {
+    width: 36px;
+    height: 36px;
+}
+.userlist-main-single {
+    padding: 15px;
+}
 
-    /*---------------------
+/*---------------------
     详情部分
-    ---------------------*/
+---------------------*/
+.userlist-screen-sort {
+    display: none;
+}
+.userlist-main-single-userinfo-condata {
+    display: none !important;
+}
+#userlist_userhome{
+    display: none;
+}
+#userlist_usersite{
+    display: none;
+}
+.userlist-main-single-userinfo-btnbox {
+    width: 64px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: -80px;
+    margin-right: -60px;
+}
+.userlist-main-single-userinfo-btn{
+    position: relative;
+}
+.userlist-main-single-worksmore a span {
+    width: 3px;
+    height: 3px;
+}
+.userlist-main-single-worksmore a {
+    padding: 20px 0px;
+}
+.userlist-main-single-userinfo {
+    padding-left: 15px;
+}
+#userlist_follow a {
+    color: #000;
+    background: none;
+}
+/*
+-------------  设计师列表  -------------
+*/
+.userlist-main-single-works{
+    width: 100%;
+}
+.userlist-main-singlebox{
+    width: 100%;
+}
+.userlist-main-single-worksimg {
+    float: left;
+    width: 26%;
+}
+.userlist-main-singlebox{
+	margin-bottom: 0px;
+}
 
+/*
+-------------  设计师列表  end-------------
+*/
+
+.listpaging-btnpc{
+	display: none;
+}
+.listpaging-btnmobile{
+	display: block;
+}
 
 
 
@@ -264,6 +339,22 @@
     .content_list_Bt_info_left_line {
         display: none;
     }
+/*
+-------------  设计师列表  -------------
+*/
+.userlist-main-single-works{
+    width: 100%;
+}
+.userlist-main-singlebox{
+    width: 100%;
+}
+.userlist-main-single-worksimg {
+    float: left;
+}
+.userlist-main-singlebox{
+	margin-bottom: 30px;
+}
+
 
 }
 
