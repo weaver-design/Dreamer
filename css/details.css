@@ -1260,79 +1260,7 @@
 
 /*-------  详情个人信息  end-------*/
 
-/*-------  列表分页  -------*/
 
-.listpaging-box{
-    width: 100%;
-    min-height: 1px;
-}
-.listpaging-btnpc{
-	display: block;
-}
-.listpaging-btnmobile{
-	display: none;
-}
-.listpaging-btnmobile a{
-    width: 64%;
-    line-height: 1px;
-    line-height: 44px;
-    display: block;
-    font-size: 12px;
-    text-align: center;
-    color: #df7728;
-    background-color: #ffffff;
-    margin: 30px auto 15px auto;
-}
-.listpaging-btnmobile a.active{
-	background-color: #df7728;
-}
-
-.listpaging-btn{
-    width: 100%;
-	min-height: 1px;
-	overflow: hidden;
-    margin-top: 30px;
-    margin-bottom: 15px;
-}
-.listpaging-btn ul{
-	padding: 0;
-}
-.listpaging-btn ul li{
-    list-style: none;
-    overflow: hidden;
-    float: left;
-    margin-right: 10px;
-}
-.listpaging-btn ul li span{
-    font-size: 12px;
-    line-height: 32px;
-    padding: 0px 10px;
-}
-.listpaging-btn ul li a{
-	width: auto;
-	line-height: 1px;
-	line-height: 32px;
-	display: block;
-	padding: 0px 15px;
-	font-size: 12px;
-	color: #666666;
-	background-color: #ffffff;
-}
-.listpaging-btn ul li a:hover{
-	color: #ffffff;
-	background-color: #df7728;
-}
-.listpaging-btn ul li a.active{
-	color: #ffffff;
-	background-color: #df7728;
-}
-
-.listpaging-notoptional{
-	background-color: #d8d8d8 !important;
-	pointer-events: none;
-}
-
-/*-------  列表分页  end-------*/
 
 
 
