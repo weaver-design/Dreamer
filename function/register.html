@@ -172,7 +172,7 @@
         $("#rbutton").click(function (e) {
             // Request API.
             axios
-            .post('/auth/local/register', {
+            .post('/api/auth/local/register', {
                 username: document.getElementById('username').value,
                 email: document.getElementById('useremail').value,
                 password: document.getElementById('userpassword').value
@@ -188,6 +188,16 @@
                 window.alert('注册失败 :-)' + error);
             });
         });
+        // 发请求获取团队数据
+        axios
+        .get('/api/teams')
+        .then(function(response) {
+            console.log('Team datas', response.data);
+        })
+        .catch(function(error) {
+            console.log(error);
+        });
+        
     </script>
 </body>
 </html>
