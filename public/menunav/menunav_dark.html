@@ -4,17 +4,7 @@
         <div class="searchpage_close">
             <a href="javascript:void(0);">Close</a>
         </div>
-        <div>
-            <div class="">
-                <input type="text" name="fname" />
-            </div>
-            <div class="">
-                发现724种词条
-            </div>
-        </div>
-        <div>
-            
-        </div>
+        <div id="searchglobal"></div>
     </div>
 </div>
 
@@ -119,7 +109,14 @@
 
 
 <script type="text/javascript">
+    // 引入登录页面
+    $(function(){
+        var url = window.location.href;
+        $("#searchglobal").load("/public/search/searchglobal.html",function(){
+        });
+    });
 
+    // 菜单
     $(document).ready(function(){
         var _href = window.location.href;
         $(".nav>li>a").each(function(){
@@ -137,15 +134,7 @@
     })
 
     // 设置选中状态
-    // $('#navbar li a:eq(' + (function(){
-    //     var i = 0;
-    //     $('#navbarmore1 li a').each(function(index, element){
-    //         if($(this).attr('class') == 'active') {
-    //             i = index
-    //         }
-    //     })
-    //     return i
-    // })() + ')').addClass('active')
+
 
     // 点击显示效果
      $(document).ready(function() {
