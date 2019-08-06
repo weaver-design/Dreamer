@@ -68,6 +68,29 @@
 	color:#000000;
 }
 
+/* 表单说明 */
+.content-modify-userinfor-main-explain{
+    padding-bottom: 30px;
+    width: 100%;
+    min-height: 1px;
+    overflow: hidden;
+}
+.content-modify-userinfor-main-explain span{
+	display: block;
+}
+.content-modify-userinfor-main-explain-t1{
+	font-size: 30px;
+	color: #757575;
+	float: left;
+}
+.content-modify-userinfor-main-explain-t2{
+	font-size: 12px;
+	color: #757575;
+	float: left;
+	padding: 20px 0px 0px 20px;
+}
+
+
 .content-modify-userinfor-main-content table{
     min-height: 480px;
 }
@@ -92,7 +115,7 @@
 }
 .content-modify-userinfor-main-content table tr td textarea{
     width: 100%;
-    height: 200px;
+    height: 120px;
     line-height: 24px;
     border: 1px solid #dbe2e6;
     padding:15px;
@@ -136,6 +159,16 @@
 	background-color: #4395e2;
 }
 
+.addheadimg-box{
+
+}
+.addheadimg{
+	width: 280px;
+	margin-bottom: 15px;
+}
+.addheadimg img{
+}
+
 .addheadimg_text{
 
 }
@@ -172,13 +205,48 @@
     margin-top: 8px;
 }
 
+/*---------------------
+
+  新增用户信息页面
+
+---------------------*/
+
+.newpic-main-content{
+    width: 100%;
+}
+.newpic-main-content a{
+    width: 18%;
+    min-height: 1px;
+    overflow: hidden;
+    display: block;
+    float: left;
+    line-height: 40px;
+    text-align: center;
+    font-size: 12px;
+    color: #ffffff;
+    background-color: #9f9f9f;
+    margin-right: 15px;
+}
+.newpic-main-content a:hover{
+	background-color: #4aae1d;
+}
+.newpic-main-content span {
+	font-size: 12px !important;
+    display: block;
+    float: left;
+}
 
 
 
-
-
-
-
+@media (min-width: 1301px) {
+	.addheadimg{
+		float: left;
+	}
+	.addheadimg_text {
+		float: left;
+		margin-left: 30px;
+	}
+}
 
 
 
