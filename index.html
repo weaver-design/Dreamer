@@ -26,26 +26,26 @@
 
     <!-- 全局样式 -->
     <link href="css/css.css" rel="stylesheet" type="text/css" />
-    <link href="css/css.css" rel="stylesheet" type="text/css" />
+    <link href="css/details.css" rel="stylesheet" type="text/css" />
     <link href="css/media.css" rel="stylesheet" type="text/css" />
 
     <!-- 公用文件 -->
     <script src="/public/footer/footer.js"></script>
-    <script src="/public/menunav/menunav.js"></script>
+    <script src="/public/menunav/menunav_dark.js"></script>
 </head>
 
 <body class="Hbody">
     <!-- header -->
-    <div class="header">
+    <div class="header header-homebg">
         <!-- 菜单部分 -->
         <div class="navBox">
-            <div id="menunav"></div>
+            <div id="menunav_dark"></div>
         </div>
         <div class="banner">
             <div class="container">
                 <div class="maininfo">
-                    <span class="maininfo_title">My · Dreamer</span>
-                    <span class="maininfo_text">一群爱做梦的人、一群不切实际的人。我们爱幻想，我们为改变这个世界而存在...</span>
+                    <span class="maininfo-title-home">My · Dreamer</span>
+                    <span class="maininfo-text-home">一群爱做梦的人、一群不切实际的人。我们爱幻想，我们为改变这个世界而存在...</span>
                 </div>
             </div>
         </div>
@@ -53,11 +53,54 @@
 
     <!-- 主体内容 -->
     <div class="content">
-        <div class="content_tab">
+        <div class="userlist-screen-box">
+            <div class="container">
+                <div class="userlist-screen-select">
+                    <div class="userlist-screen-select">
+                        <select>
+                            <option value ="volvo">最新推荐</option>
+                            <option value ="volvo">最新发布</option>
+                            <option value ="saab">人气最旺</option>
+                        </select>
+                    </div>
+                    <div class="userlist-screen-line"></div>
+                    <div class="userlist-screen-select">
+                        <select>
+                            <option value="shanghai">所有行业</option>
+                            <option value="shejiang">平面</option>
+                            <option value="shanghai">界面</option>
+                            <option value="shanghai">网页</option>
+                            <option value="jiangsu">工业</option>
+                            <option value="jiangsu">动漫</option>
+                            <option value="jiangsu">影视</option>
+                            <option value="jiangsu">插画</option>
+                            <option value="shanghai">空间</option>
+                            <option value="jiangsu">摄影</option>
+                            <option value="jiangsu">其他</option>
+                        </select>
+                    </div>
+                    <div class="userlist-screen-line"></div>
+                </div>
+                <div class="userlist-screen-sort">
+                    <!-- <div class="userlist-screen-notes">
+                        所有者：
+                    </div> -->
+                    <div class="userlist-screen-select">
+                        <select>
+                            <option value ="volvo">所有者</option>
+                            <option value ="volvo">原创</option>
+                            <option value ="volvo">转载</option>
+                        </select>
+                    </div>
+                    <div class="userlist-screen-line"></div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="content_tab">
             <div class="container">
                 <ul>
                     <li>
-                        <a href="javascript:void(0);" class="active">推荐</a>
+                        <a href="javascript:void(0);" class="active">平台推荐</a>
                     </li>
                     <li>
                         <a href="javascript:void(0);">最新</a>
@@ -67,7 +110,7 @@
                     </li>
                 </ul>
             </div>
-        </div>
+        </div> -->
         <div class="content_list">
             <div class="container">
                 <div class="row">

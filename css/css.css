@@ -93,6 +93,9 @@ input{
 	overflow: hidden;
 	background-color: #ffffff;
 }
+.header-homebg{
+	background-color: #000000 !important;
+}
 .header-materialbg{
 	background-color: #000000 !important;
 }
@@ -126,6 +129,16 @@ input{
 	font-size: 14px;
 	line-height: 32px;
 	color:#000000;
+}
+.maininfo-title-home{
+	font-size: 48px;
+	line-height: 68px;
+	color:#ffffff;
+}
+.maininfo-text-home{
+	font-size: 14px;
+	line-height: 32px;
+	color:#ffffff;
 }
 .maininfo_title2{
 	font-size: 36px;
@@ -867,12 +880,14 @@ input{
 	display:none;
 }
 .searchpage_close{
-	width:60px;
-	height:60px;
-	position:absolute;
-	right:0;
+	width: 80px;
+	height: 60px;
+	position: absolute;
+	right: 0;
 	top: 0;
 	z-index: 999;
+	margin-right: 15px;
+	margin-top: 24px;
 }
 .searchpage_close a{
 	width:100%;
@@ -1064,6 +1079,21 @@ input{
 }
 .Signin-inputbox-forgotten a:hover{
 	color:#000000;
+}
+
+#loginBtn{
+	width: 100%;
+	min-height: 1px;
+	line-height: 42px;
+	padding: 0px  16px;
+	text-align: center;
+	color: #ffffff;
+	font-size: 16px;
+	background-color: #df7728;
+	cursor:pointer;
+}
+#loginBtn:hover{
+	background-color: #4395e2;
 }
 
 .Signin-inputbox-btn input{
@@ -1341,14 +1371,44 @@ pointer-events: none;
 -------------  搜索页面  -------------
 */
 
-.serachinput{
+.serachbox{
 	width: 100%;
 	min-height: 1px;
 	overflow: hidden;
 	border-bottom: 1px solid #3c3c3c;
 	padding: 24px 0px 4px 0px;
 }
-.serachinput input{
+.serachbox-select{
+	width: 16%;
+	float: left;
+}
+.serachbox-select select{
+	width: 100%;
+	min-height: 1px;
+	overflow: hidden;
+	display: block;
+	border:none;
+	background: none;
+	font-size: 14px;
+	line-height: 64px;
+	color: #ffffff;
+	margin-right: 15px;
+	padding-right: 20px;
+	padding-left: 15px;
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	background: url('/images/ico_select.png') no-repeat right center;
+	background-size: 16px 16px;
+	background-position-x: 88%;
+}
+.serachbox-select select option{
+}
+.serachbox-input{
+	width: 64%;
+	float: left;
+}
+.serachbox-input input{
 	width: 100%;
 	min-height: 1px;
 	line-height: 64px;
@@ -1357,48 +1417,64 @@ pointer-events: none;
 	padding-left: 24px;
 	font-size: 18px;
 	color: #aeaeae;
-
 }
+.serachbox-btn{
+	width: 100%;
+	min-height: 1px;
+	overflow: hidden;
+}
+
+
 .serachcontent{
 
 }
 .serachcontent-nav{
-	width: 20%;
+	width: 16%;
 	min-height: 1px;
 	overflow: hidden;
 	float: left;
 }
 .serachcontent-nav ul{
 	padding: 0;
+	margin-top: 26px;
 }
 .serachcontent-nav ul li{
 	list-style: none;
 }
 .serachcontent-nav ul li a{
-	width: auto;
+	width: 100%;
 	min-height: 1px;
 	overflow: hidden;
 	display: block;
-	float: left;
 	font-size: 14px;
-	line-height: 18px;
-	padding: 0px 10px;
+	line-height: 48px;
+	padding: 0px 15px;
+	color: #ffffff\9;
+	color: rgba(255,255,255,.64);
 }
 .serachcontent-nav ul li a:hover{
-
+	color: #ffffff;
+	background-color: #000000\9;
+	background-color: rgba(0,0,0,.32);
 }
 .serachcontent-nav ul li a.active{
-
+	color: #ffffff;
+	background-color: #000000\9;
+	background-color: rgba(0,0,0,.32);
 }
 
 .serachcontent-allinfo{
-	width: 80%;
+	width: 84%;
 	min-height: 1px;
 	overflow: hidden;
 	float: left;
+	border-left: 1px solid #3c3c3c;
 }
 .serachcontent-allinfo-menu{
-
+	width: 100%;
+	min-height: 1px;
+	overflow: hidden;
+	padding: 30px;
 }
 .serachcontent-allinfo-menu ul{
 	padding: 0;
@@ -1413,13 +1489,11 @@ pointer-events: none;
 	display: block;
 	float: left;
 	font-size: 14px;
-	line-height: 18px;
-	padding: 0px 10px;
+	line-height: 36px;
+	margin-right: 24px;
+	padding: 0px 4px;
 	color: #ffffff\9;
 	color: rgba(255,255,255,.64);
-
-	background-color: rgba(255,255,255,.48);
-	background-color: #ffffff\9;
 }
 .serachcontent-allinfo-menu ul li a:hover{
 	color: #ffffff;
@@ -1429,7 +1503,10 @@ pointer-events: none;
 }
 
 .serachcontent-allinfo-list{
-
+	width: 100%;
+	min-height: 1px;
+	overflow: hidden;
+	padding: 0px 30px;
 }
 
 /*
