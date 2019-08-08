@@ -84,7 +84,8 @@ input{
 -------------  首页面  -------------
 */
 .Hbody{
-	background-color: #e0e5ed;
+	background-color: #f2f5f9;
+	/* background-color: #e0e5ed; */
 }
 
 .header{
