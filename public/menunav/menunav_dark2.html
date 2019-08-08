@@ -68,20 +68,54 @@
             <div class="menu-container">
                 <div id="menu" class="menu">
                     <ul class="nav navbar-nav">
-                        <li>
+                        <!-- class="dropdown" -->
+                        <li >
                             <a href="javaScript:void(0);" _link="/">
                                 发现
                             </a>
+                            <div class="menudropdown">
+                                <ul>
+                                    <li>
+                                        <a href="">作品</a>
+                                    </li>
+                                    <li>
+                                        <a href="">文章</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </li>
                         <li>
                             <a href="javaScript:void(0);" _link="/user/userlist.html">
-                                造梦师
+                                设计师
                             </a>
+                            <div class="menudropdown">
+                                <ul>
+                                    <li>
+                                        <a href="">设计师</a>
+                                    </li>
+                                    <li>
+                                        <a href="">工作室</a>
+                                    </li>
+                                    <li>
+                                        <a href="">企业组织</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </li>
                         <li>
                             <a href="javaScript:void(0);" _link="/material/">
                                 素材
                             </a>
+                            <div class="menudropdown">
+                                <ul>
+                                    <li>
+                                        <a href="">图片</a>
+                                    </li>
+                                    <li>
+                                        <a href="">字体</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </li>
                         <li>
                             <a href="javaScript:void(0);" _link="/sites/">
@@ -90,13 +124,26 @@
                         </li>
                         <li>
                             <a href="javaScript:void(0);" _link="/Help/">
-                                帮帮忙
+                                网址推荐
                             </a>
                         </li>
                         <li>
                             <a href="javaScript:void(0);">
                                 ...
                             </a>
+                            <div class="menudropdown">
+                                <ul>
+                                    <li>
+                                        <a href="">帮帮忙</a>
+                                    </li>
+                                    <li>
+                                        <a href="">活动</a>
+                                    </li>
+                                    <li>
+                                        <a href="">职位</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -130,7 +177,7 @@
        $(".nav>li>a").click(function(){
             var _link = $(this).attr("_link");
             window.location = _link;
-       });  
+       }); 
     })
 
     // 设置选中状态

@@ -74,13 +74,53 @@ input{
     margin-bottom: -1px;*/
 }
 
+#menu .navbar-nav > li:hover .menudropdown{
+	height:auto;
+	opacity: 1;
+}
+
+.menudropdown{
+	opacity: 0;
+	width: 200px;
+	height: 0;
+	position: absolute;
+	overflow: hidden;
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;/* Firefox 4 */
+	-o-transition: all 0.5s; /* Opera */
+}
+.menudropdown ul{
+	padding: 0;
+}
+.menudropdown ul li{
+	list-style: none;
+}
+.menudropdown ul li a{
+	width: auto;
+	min-height: 1px;
+	overflow: hidden;
+	display: block;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	line-height: 20px;
+	color: #999999;
+	font-size: 14px;
+	padding: 10px 15px;
+	text-align: center;
+}
+.menudropdown ul li a:hover{
+	background-color: #ffffff;
+
+}
 
 
-/* 
+
+/*
 -------------  公用库文件  -------------
 */
 
-/* 
+/*
 -------------  首页面  -------------
 */
 .Hbody{
