@@ -9,6 +9,8 @@
 </div>
 <!-- 登录页面 -->
 <div id="Signin" class="Signinbox"></div>
+<!-- 消息页面 -->
+<div id="emessage" class="emessage"></div>
 
 <nav id="navbar" class="navbar navbar-default navbar-static-top" style="background-color: #000000;">
     <div class="container" style="position: relative;">
@@ -50,7 +52,7 @@
                 </a>
             </div>
             <div class="navbar_news2">
-                <a href="javascript:void(0);" target="_blank">
+                <a href="javascript:void(0);">
                     <img src="/images/icon_news2.png">
                 </a>
             </div>
@@ -76,43 +78,43 @@
                             <div class="menudropdown">
                                 <ul>
                                     <li>
-                                        <a href="">作品</a>
+                                        <a href="/subpage/list/works.html">作品</a>
                                     </li>
                                     <li>
-                                        <a href="">文章</a>
+                                        <a href="/subpage/list/Article.html">文章</a>
                                     </li>
                                 </ul>
                             </div>
                         </li>
                         <li>
-                            <a href="javaScript:void(0);" _link="/user/userlist.html">
+                            <a href="javaScript:void(0);" _link="">
                                 设计师
                             </a>
                             <div class="menudropdown">
                                 <ul>
                                     <li>
-                                        <a href="">设计师</a>
+                                        <a href="/user/designer.html">设计师</a>
                                     </li>
                                     <li>
-                                        <a href="">工作室</a>
+                                        <a href="/user/Studio.html">工作室</a>
                                     </li>
                                     <li>
-                                        <a href="">企业组织</a>
+                                        <a href="/user/company.html">企业组织</a>
                                     </li>
                                 </ul>
                             </div>
                         </li>
                         <li>
-                            <a href="javaScript:void(0);" _link="/material/">
+                            <a href="javaScript:void(0);" _link="">
                                 素材
                             </a>
                             <div class="menudropdown">
                                 <ul>
                                     <li>
-                                        <a href="">图片</a>
+                                        <a href="/subpage/material/picture.html">图片</a>
                                     </li>
                                     <li>
-                                        <a href="">字体</a>
+                                        <a href="/subpage/material/font.html">字体</a>
                                     </li>
                                 </ul>
                             </div>
@@ -123,12 +125,42 @@
                             </a>
                         </li>
                         <li>
-                            <a href="javaScript:void(0);" _link="/Help/">
-                                帮帮忙
+                            <a href="javaScript:void(0);" _link="/subpage/weblink/index.html">
+                                酷站推荐
                             </a>
                         </li>
+                        <!-- <li>
+                            <a href="javaScript:void(0);" _link="">
+                                帮帮忙
+                            </a>
+                            <div class="menudropdown">
+                                <ul>
+                                    <li>
+                                        <a href="/subpage/help/website.html">网站类</a>
+                                    </li>
+                                    <li>
+                                        <a href="/subpage/help/ui.html">平面类</a>
+                                    </li>
+                                    <li>
+                                        <a href="/subpage/help/ui.html">软件类</a>
+                                    </li>
+                                    <li>
+                                        <a href="/subpage/help/index.html">视频类</a>
+                                    </li>
+                                    <li>
+                                        <a href="/subpage/help/index.html">插画类</a>
+                                    </li>
+                                    <li>
+                                        <a href="/subpage/help/index.html">空间类</a>
+                                    </li>
+                                    <li>
+                                        <a href="/subpage/help/index.html">其他</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li> -->
                         <li>
-                            <a href="javaScript:void(0);">
+                            <a href="javaScript:void(0);" _link="">
                                 ...
                             </a>
                             <div class="menudropdown">
@@ -156,11 +188,21 @@
 
 
 <script type="text/javascript">
-    // 点击显示效果
     $(document).ready(function() {
+
+        // 点击登录显示效果
         $(".navbarSignin a").click(function(){
             $(".Signinbox").show();
         });
+
+        // 点击登录显示效果
+        $(".navbar_news2 a").click(function(){
+            $("#emessage").show();
+            return false;
+        });
+        // $(document).click(function () {
+        //     $(".emessage").hide();
+        // })
 
     });
     // 引入登录页面
@@ -169,6 +211,8 @@
         $("#Signin").load("/function/Signin.html",function(){
         });
         $("#searchglobal").load("/public/search/searchglobal.html",function(){
+        });
+        $("#emessage").load("/public/message/emessage.html",function(){
         });
     });
 

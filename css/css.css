@@ -56,11 +56,12 @@ input{
 .navbar {
     margin-bottom: 0px;
 }
-#menu .navbar-nav > li > a {
-    color: #999999;
+#menu .navbar-nav > li > a{
+		color: #999999;
 }
 #menu .navbar-nav > li > a:hover{
-    color: #ffffff;
+		color: #ffffff;
+		background-color: #333333;
 }
 #button .icon-bar{
     background-color: #ffffff;
@@ -81,10 +82,13 @@ input{
 
 .menudropdown{
 	opacity: 0;
-	width: 200px;
+	width: 140px;
 	height: 0;
 	position: absolute;
 	overflow: hidden;
+	padding: 15px 0px;
+	background-color: #333333;
+
 	transition: all 0.5s;
 	-webkit-transition: all 0.5s;
 	-moz-transition: all 0.5s;/* Firefox 4 */
@@ -110,8 +114,8 @@ input{
 	text-align: center;
 }
 .menudropdown ul li a:hover{
-	background-color: #ffffff;
-
+	color: #ffffff;
+	background-color: #4395e2;
 }
 
 
@@ -131,7 +135,6 @@ input{
 .header{
 	width: 100%;
 	min-height: 1px;
-	overflow: hidden;
 	background-color: #ffffff;
 }
 .header-homebg{
@@ -143,7 +146,6 @@ input{
 .navBox{
 	width: 100%;
 	min-height: 1px;
-	overflow: hidden;
 	/*padding: 20px 0px;*/
 }
 .banner{
@@ -1583,4 +1585,171 @@ pointer-events: none;
 
 /*
 -------------  搜索页面  end-------------
+*/
+
+
+
+/* 
+-------------  消息页面  -------------
+*/
+.emessage{
+	width: 100%;
+	min-height: 1px;
+	display: none;
+	position: absolute;
+	z-index: 9999;
+	top: 0;
+	margin-top: 50px;
+}
+.emessage-trianglebox{	
+	width: 100%;
+	min-height: 1px;
+}
+.emessage-triangle{
+	width:0;
+	height:0;
+	border-right:10px solid transparent;
+	border-left:10px solid transparent;
+	border-bottom:10px solid #ffffff;
+	float: right;
+	margin-right: 95px;
+}
+.emessage-boxbg{
+	width: 360px;
+	min-height: 1px;
+	float: right;
+	background-color: #ffffff;
+	padding: 15px;
+
+	box-shadow: 0px 0px 8px rgba(17,94,210,.24);
+	-moz-box-shadow: 0px 0px 8px rgba(17,94,210,.24);
+	-webkit-box-shadow: 0px 0px 8px rgba(17,94,210,.24);
+}
+.emessage-morebtn{
+	width: 100%;
+	min-height: 1px;
+	overflow: hidden;
+}
+.emessage-morebtn a{
+	width: 50%;
+	min-height: 1px;
+	overflow: hidden;
+	display: block;
+	float: left;
+	line-height: 32px;
+	font-size: 12px;
+	text-align: center;
+	background-color: #f2f2f2;
+	color: #666666;
+}
+.emessage-morebtn a:hover{
+	background-color: #4aae1d;
+	color: #ffffff;
+}
+.emessage-morebtn a.active{
+	background-color: #4aae1d;
+	color: #ffffff;
+}
+
+.emessage-main{
+	width: 100%;
+	min-height: 1px;
+}
+
+.emessage-main ul{
+	position: relative;
+	width: 100%;
+	height: 400px;
+	padding: 0;
+	margin-bottom: 0px;
+}
+.emessage-main ul li{ list-style: none;}
+.emessage-main ul li input{ display: none;}
+.emessage-main ul li label{
+  float: left;
+  width: 33.33333%;
+  text-align: center;
+  line-height: 36px;
+  border-right: 0;
+  box-sizing: border-box;
+  cursor: pointer;
+	transition: all .3s;
+	margin-bottom: 0px;
+	font-size: 12px;
+	font-weight: inherit;
+	background-color: #f2f2f2;
+}
+.emessage-main ul li input:checked+label{
+  color: #fff; 
+	background-color: #000;
+	font-weight: bold;
+}
+.emessage-main ul li:last-child label{}
+.emessage-main ul li .mainmessage{
+	opacity: 0;
+	visibility: hidden;
+	position: absolute;
+	left: 0;
+	top: 36px;
+	width: 100%;
+	padding: 30px 0px;
+	height: 360px;
+	box-sizing: border-box;
+	transition: all .3s;
+}
+.emessage-main ul li input:checked~.mainmessage{ opacity: 1; visibility:visible;}
+.mainmessage ul{
+	padding: 0;
+	height: auto;
+}
+.mainmessage ul li{
+	list-style: none;
+	list-style: none;
+	border-bottom: 1px solid #f0f1f1;
+	padding-bottom: 15px;
+	margin-bottom: 15px;
+}
+.mainmessage ul li table{
+}
+.mainmessage ul li table tr{
+	
+}
+.mainmessage ul li table tr td{
+	
+}
+
+.mainmessage-info{
+	display: block;
+	float: left;
+	font-size: 12px;
+	line-height: 18px;
+}
+.mainmessage-info a{
+	font-size: 12px;
+	line-height: 18px;
+	color: #4aae1d;
+	float: left;
+}
+.mainmessage-info a:hover{
+	color: #000000 !important;
+}
+
+.mainmessage-info-name{
+	color: #999999;
+}
+.mainmessage-info-news{
+	color: #999999 !important;
+}
+.mainmessage-info-date{
+	font-size: 12px;
+	line-height: 18px;
+	color: #c7c7c7;
+	display: block;
+	float: left;
+	margin-top: 6px;
+}
+
+
+/* 
+-------------  消息页面  end-------------
 */
