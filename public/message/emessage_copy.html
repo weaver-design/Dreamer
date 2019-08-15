@@ -7,14 +7,38 @@
     <div class="emessage-boxbg">
         <div class="emessage-main">
             <ul class="nav nav-tabs" id="tab_message">
-                <li class="active"><a href="#info_1">帮帮忙</a></li>
-                <li><a href="#info_2">我的私信</a></li>
-                <li><a href="#info_3">系统消息</a></li>
+                <li class="active"><a href="#user_works">帮帮忙</a></li>
+                <li><a href="#user_Article">我的私信</a></li>
+                <li><a href="#user_about">系统消息</a></li>
             </ul>
 
             <!-- 主体内容 -->
-            <div class="tab-content emessage-content">
-                <div class="tab-pane active" id="info_1">
+            <div class="content content_details">
+                <div class="tab-content">
+                    <div class="tab-pane active" id="user_works">
+                        <div class="container">
+                            123
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="user_Article">
+                        <div class="container">
+                            222
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="user_about">
+                        <div class="container">
+                            333
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <ul>
+                <li>
+                    <input id="tab1" type="radio" name="tab" checked>
+                    <label for="tab1">帮帮忙</label>
                     <div class="mainmessage">
                         <ul>
                             <li>
@@ -82,8 +106,10 @@
                             </li>
                         </ul>
                     </div>
-                </div>
-                <div class="tab-pane" id="info_2">
+                </li>
+                <li>
+                    <input id="tab2" type="radio" name="tab">
+                    <label for="tab2">我的私信</label>
                     <div class="mainmessage">
                         <ul>
                             <li>
@@ -151,8 +177,10 @@
                             </li>
                         </ul>
                     </div>
-                </div>
-                <div class="tab-pane" id="info_3">
+                </li>
+                <li>
+                    <input id="tab3" type="radio" name="tab">
+                    <label for="tab3">系统消息</label>
                     <div class="mainmessage">
                         <ul>
                             <li>
@@ -220,8 +248,8 @@
                             </li>
                         </ul>
                     </div>
-                </div>
-            </div>
+                </li>
+            </ul>
         </div>
         <div class="emessage-morebtn">
             <a href="" class="active">查看全部消息</a>

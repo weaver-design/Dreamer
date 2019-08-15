@@ -32,13 +32,24 @@
     <!-- 公用文件 -->
     <script src="/public/footer/footer.js"></script>
     <script src="/public/menunav/menunav_dark.js"></script>
+
+    <script type="text/javascript">
+        $(function () {
+            $('#tablist a:first').tab('show');//初始化显示哪个tab
+
+            $('#tablist a').click(function (e) {
+                e.preventDefault();//阻止a链接的跳转行为
+                $(this).tab('show');//显示当前选中的链接及关联的content
+            })
+        })
+    </script>
 </head>
 
 <body class="Hbody">
-    <!-- header 
+    <!-- header -->
     <div class="header">
         <div id="menunav_dark"></div>
-    </div>-->
+    </div>
     <!-- 个人、团队信息 -->
     <div class="userinfo-box">
         <div class="userinfo-baner">
@@ -119,60 +130,60 @@
             </div>
             <div class="userinfo-main-tab">
                 <ul class="nav nav-tabs" id="tablist">
-                    <li class="active"><a href="#user_works">Home</a></li>
-                    <li><a href="#user_Article">Profile</a></li>
-                    <li><a href="#user_about">Messages</a></li>
+                    <li class="active"><a href="#user_works">作品</a></li>
+                    <li><a href="#user_Article">文章</a></li>
+                    <li><a href="#user_about">资料</a></li>
                 </ul>
 
                 <!-- 主体内容 -->
                 <div class="content content_details">
-                <div class="tab-content">
-                    <div class="tab-pane active" id="user_works">
-                        <div class="container">
-                            <!-- 作品分类 -->
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="content_listBox_type">
-                                        <a href="">行业</a>
-                                        <span></span>
-                                        <a href="">推荐</a>
-                                        <span></span>
-                                        <a href="">最新</a>
-                                        <span></span>
-                                        <a href="">热门</a>
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="user_works">
+                            <div class="container">
+                                <!-- 作品分类 -->
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="content_listBox_type">
+                                            <a href="">行业</a>
+                                            <span></span>
+                                            <a href="">推荐</a>
+                                            <span></span>
+                                            <a href="">最新</a>
+                                            <span></span>
+                                            <a href="">热门</a>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <!-- 作品列表 -->
-                            <div class="row">
-                                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-4">
-                                    <div class="content_listBox2">
-                                        <div class="content_list_Bimg">
-                                            <a href="subpage/details.html">
-                                                <img src="/images/img_list_default.jpg">
-                                            </a>
-                                        </div>
-                                        <div class="content_list_Btext">
-                                            <div class="content_list_Bt_title">
-                                                <span>添加最新作品</span>
+                                <!-- 作品列表 -->
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-4">
+                                        <div class="content_listBox2">
+                                            <div class="content_list_Bimg">
+                                                <a href="subpage/details.html">
+                                                    <img src="/images/img_list_default.jpg">
+                                                </a>
+                                            </div>
+                                            <div class="content_list_Btext">
+                                                <div class="content_list_Bt_title">
+                                                    <span>添加最新作品</span>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                            </div><!-- 作品列表 end-->
+                                </div><!-- 作品列表 end-->
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="user_Article">
+                            <div class="container">
+                                222
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="user_about">
+                            <div class="container">
+                                333
+                            </div>
                         </div>
                     </div>
-                    <div class="tab-pane" id="user_Article">
-                        <div class="container">
-                            222
-                        </div>
-                    </div>
-                    <div class="tab-pane" id="user_about">
-                        <div class="container">
-                            333
-                        </div>
-                    </div>
-                </div>
                 </div>
             </div>
 
@@ -199,19 +210,12 @@
     <![endif]-->
 
     <script type="text/javascript">
-        $(function () {
-            $('#tablist a:first').tab('show');//初始化显示哪个tab
 
-            $('#tablist a').click(function (e) {
-                e.preventDefault();//阻止a链接的跳转行为
-                $(this).tab('show');//显示当前选中的链接及关联的content
-            })
-        })
 
         //拿到TextArea的DOM
-        //var textarea=document.getElementById('textarea');
+        var textarea=document.getElementById('textarea');
         //设置高度
-        //textarea.style.height = textarea.scrollHeight + 'px';
+        textarea.style.height = textarea.scrollHeight + 'px';
     </script>
 </body>
 </html>
