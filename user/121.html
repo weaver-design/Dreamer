@@ -35,36 +35,16 @@
 </head>
 
 <body>
-    <!-- header -->
-    <div class="header">
-        <div id="menunav_dark"></div>
-    </div>
-    <!-- 个人、团队信息 -->
-    <!-- 主体内容列表 -->
-    <div class="listtab-public">
-        <ul>
-            <li>
-                <input id="tab1" type="radio" name="tab" checked>
-                <label for="tab1">作品</label>
-                <div class="listtabmian">
-                    012
-                </div>
-            </li>
-            <li>
-                <input id="tab2" type="radio" name="tab">
-                <label for="tab2">文章</label>
-                <div class="listtabmian">
-                    123
-                </div>
-            </li>
-            <li>
-                <input id="tab3" type="radio" name="tab">
-                <label for="tab3">资料</label>
-                <div class="listtabmian">
-                    345
-                </div>
-            </li>
-        </ul>
+    <ul class="nav nav-tabs" id="tablist">
+        <li class="active"><a href="#home">Home</a></li>
+        <li><a href="#profile">Profile</a></li>
+        <li><a href="#messages">Messages</a></li>
+    </ul>
+
+    <div class="tab-content">
+        <div class="tab-pane active" id="home">111</div>
+        <div class="tab-pane" id="profile">222</div>
+        <div class="tab-pane" id="messages">.33</div>
     </div>
 
 
@@ -84,10 +64,18 @@
     <![endif]-->
 
     <script type="text/javascript">
+        $(function () {
+            $('#tablist a:first').tab('show');//初始化显示哪个tab
+
+            $('#tablist a').click(function (e) {
+                e.preventDefault();//阻止a链接的跳转行为
+                $(this).tab('show');//显示当前选中的链接及关联的content
+            })
+        })
+
         //拿到TextArea的DOM
         //var textarea=document.getElementById('textarea');
         //设置高度
         //textarea.style.height = textarea.scrollHeight + 'px';
     </script>
-</body>
 </html>

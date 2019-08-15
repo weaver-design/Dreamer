@@ -124,6 +124,12 @@ input{
 -------------  公用库文件  -------------
 */
 
+
+/*
+-------------  公用库文件  end-------------
+*/
+
+
 /*
 -------------  首页面  -------------
 */
@@ -1241,8 +1247,12 @@ input{
 .userinfo-main{
 	width: 100%;
 	min-height: 1px;
-	background-color: #ffffff;
 	position: relative;
+}
+.userinfo-mainbox{
+	width: 100%;
+	min-height: 1px;
+	background-color: #ffffff;
 }
 .userinfo-main-type1{
 	width: 100%;
@@ -1759,53 +1769,6 @@ pointer-events: none;
 /*
 -------------  公用tab页  -------------
 */
-.listtab-public{
-	width: 100%;
-	min-height: 1px;
-}
-
-.listtab-public ul{
-	position: relative;
-	width: 100%;
-	height: 400px;
-	padding: 0;
-	margin-bottom: 0px;
-}
-.listtab-public ul li{ list-style: none;}
-.listtab-public ul li input{ display: none;}
-.listtab-public ul li label{
-  float: left;
-  width: 33.33333%;
-  text-align: center;
-  line-height: 36px;
-  border-right: 0;
-  box-sizing: border-box;
-  cursor: pointer;
-	transition: all .3s;
-	margin-bottom: 0px;
-	font-size: 12px;
-	font-weight: inherit;
-	background-color: #f2f2f2;
-}
-.listtab-public ul li input:checked+label{
-  color: #fff;
-	background-color: #000;
-	font-weight: bold;
-}
-.listtab-public ul li:last-child label{}
-.listtab-public ul li .listtabmian{
-	opacity: 0;
-	visibility: hidden;
-	position: absolute;
-	left: 0;
-	top: 36px;
-	width: 100%;
-	padding: 30px 0px;
-	height: 360px;
-	box-sizing: border-box;
-	transition: all .3s;
-}
-.listtab-public ul li input:checked~.listtabmian{ opacity: 1; visibility:visible;}
 
 
 /*
