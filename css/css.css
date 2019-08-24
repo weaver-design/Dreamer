@@ -603,7 +603,7 @@ input{
 .content_listBox{
 	width: 100%;
 	min-height: 1px;
-	margin-bottom: 40px;
+	margin-bottom: 30px;
 	background-color: #ffffff;
 
 	color:rgba(17,94,210,.36);
@@ -626,21 +626,145 @@ input{
 	width: 100%;
 	min-height: 1px;
 	overflow: hidden;
-/*	-moz-border-radius: 4px;
-	-webkit-border-radius: 4px;
-	border-radius:4px;*/
+	position: relative;
 }
 .content_list_Bimg a{
 	width: 100%;
 	height:100%;
 	display:block;
-	transition: all 0.6s; 
 }
-.content_list_Bimg a:hover{
-	transform: scale(1.2);
+.content_list_Bimg:hover .content_list_Baboutinfo_box{
+	display: block;
 }
 .content_list_Bimg a img{
 	width: 100%;
+}
+/* 列表相关信息 */
+.content_list_Baboutinfo_box{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	left: 0px;
+	background-color:rgba(0,0,0,.15);
+	/* display: none; block*/
+	display: none;
+}
+
+.content_list_Baboutinfo2{
+	width: 100%;
+	min-height: 1px;
+	overflow: hidden;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	margin-top: -16px;
+}
+.content_list_Baboutinfo2_btn{
+	width: auto;
+	min-height: 1px;
+
+	text-align: center;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+}
+.content_list_Baboutinfo2_btn a{
+	width: 32px;
+	height: 32px;
+	display: block;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px; 
+	border-radius:4px;
+	text-align: center;
+	line-height: 26px;
+
+	background-color: #ffffff;
+}
+.content_list_Baboutinfo2_btn a:hover{
+	background-color: #4aae1d;
+}
+.content_list_Baboutinfo2_btn a img{
+	width: 16px;
+}
+.content_list_Baboutinfo2_btn span{
+	display: block;
+	float: left;
+	width: 16px;
+	min-height: 1px;
+}
+
+.content_list_Baboutinfo3{
+	width: 100%;
+	min-height: 1px;
+	overflow: hidden;
+	position: absolute;
+	top: 36%;
+	left: 0;
+	margin-top: -16px;
+}
+.content_list_Baboutinfo3_btn{
+	width: auto;
+	min-height: 1px;
+
+	text-align: center;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+}
+.content_list_Baboutinfo3_btn a{
+	width: auto;
+	height: 32px;
+	display: block;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px; 
+	border-radius:4px;
+	text-align: center;
+	line-height: 32px;
+	font-size: 12px;
+	padding: 0px 16px;
+	color: #666666;
+	background-color: #ffffff;
+}
+.content_list_Baboutinfo3_btn a:hover{
+	background-color: #4aae1d;
+	color: #ffffff;
+}
+.content_list_Baboutinfo3_btn span{
+	display: block;
+	float: left;
+	width: 16px;
+	min-height: 1px;
+}
+
+.content_list_Baboutinfo{
+	width: 100%;
+	min-height: 1px;
+	overflow: hidden;
+	position: absolute;
+	bottom: 0;
+	left: 0px;
+	background-color: #ffffff;
+	padding: 10px;
 }
 
 .content_list_Btext{
@@ -651,22 +775,30 @@ input{
 .content_list_Bt_title{
 	width: 100%;
 	min-height: 1px;
+}
+.content_list_Bt_title a{
+	width: 100%;
+	min-height: 1px;
 	overflow: hidden;
+	display: block;
 	font-size: 14px;
 	line-height: 18px;
 	color:#000000;
-	padding: 12px 0px 8px 0px;
-	display: none;
-
+	padding: 8px 0px 4px 0px;
 }
+.content_list_Bt_title a:hover{
+	color:#666666;
+}
+
 .content_list_Bt_info{
 	width: 100%;
 	min-height: 1px;
 	overflow: hidden;
-	padding: 10px 16px;
+	padding: 10px 10px;
 }
 .content_list_Bt_info_left{
 	float: left;
+	width: 100%;
 }
 .content_list_Bt_info_left_head{
 	float: left;
@@ -687,6 +819,43 @@ input{
 .content_list_Bt_info_left_name:hover{
 	color:#000000;
 }
+.content_list_Bt_V_ico{
+	width: 16px;
+	height: 16px;
+	float: right;
+	background-color: #4aae1d;
+	line-height: 16px;
+	text-align: center;
+	-moz-border-radius: 300px;
+	-webkit-border-radius: 300px;
+	border-radius:300px;
+	margin-top: 5px;
+}
+.content_list_Bt_V_ico span{
+	font-size: 11px;
+	color: #ffffff;
+}
+.content_list_Bt_Price{
+	width: auto;
+	min-height: 1px;
+	float: right;
+	line-height: 16px;
+	margin-top: 5px;
+}
+.content_list_Bt_Price_no{
+	color: #bfbfbf;
+}
+.content_list_Bt_Price_yes{
+	color: #333333;
+}
+.content_list_Bt_Price_ico{
+	float: right;
+	padding-right: 4px;
+}
+.content_list_Bt_Price_number{
+	float: right;
+}
+
 .content_list_Bt_info_left_type{
 	float: left;
 	font-size: 12px;
@@ -716,15 +885,16 @@ input{
 
 
 .content_list_Bt_info_right{
-	float: right;
-	display: none;
+	width: 100%;
+	min-height: 1px;
+	overflow: hidden;
 }
 .content_list_Bt_info_rBox{
     width: auto;
     min-height: 1px;
     overflow: hidden;
     float: left;
-    margin-right: 8px;
+    margin-right: 12px;
     margin-top: 4px;
 }
 .content_list_Bt_info_rBox img{
@@ -735,6 +905,7 @@ input{
 	float: left;
 	font-size: 12px;
 	color:#95999e;
+	margin-left: 4px;
 }
 
 .content_list_btn{
